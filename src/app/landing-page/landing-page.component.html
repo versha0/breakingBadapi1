@@ -1,0 +1,144 @@
+<p>landing-page works!</p>
+<!--<nav class="navbar navbar-dark bg-dark" >-->
+<!--  <a class="navbar-brand" href="#">-->
+<!--&lt;!&ndash;    <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">&ndash;&gt;-->
+<!--    <div class="firsthead"><h1>BREAKING   BAD</h1></div>-->
+<!--  </a>-->
+<!--</nav>-->
+<section>
+  <!--  <h6>new section</h6>-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black">
+    <h1  style="color: aliceblue; padding-right: 5px ; padding-top: 10px; padding-left: 10px">BREAKING BAD</h1>
+
+  </nav>
+</section>
+<div class="corousel2">
+  <carousel class="corousel1" style="padding-top: 100px">
+    <slide>
+      <img src="https://wallpaperaccess.com/full/781827.jpg" alt="first slide" style="display: block; width: 100%">
+    </slide>
+    <slide>
+      <img src="https://wallpapercave.com/wp/mupAKQn.jpg" alt="third slide" style="display: block; width: 100%">
+    </slide>
+
+
+
+    <!--  <slide>-->
+    <!--    <img src="https://kccsecurity.com/wp-content/uploads/2018/11/Breaking-Bad-Wallpaper-1257.png" alt="first slide" style="display: block; width: 100%;">-->
+    <!--  </slide>-->
+  </carousel>
+</div>
+<!--<button type="button" class="btn btn-secondary btn-lg">All Characters</button>-->
+<div class="jumbotron" style="width: 100%;height : 100%;margin: auto">
+  <h1 class="display-4">I Am The One Who Knocks</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>Breaking Bad is an American neo-Western crime drama television series created and produced by Vince Gilligan. The show originally aired on AMC for five seasons, from January 20, 2008, to September 29, 2013. Set and filmed in Albuquerque, New Mexico, the series tells the story of Walter White (Bryan Cranston), an underemployed and depressed high school chemistry teacher who is struggling with both midlife crisis and a recent diagnosis of stage-3 lung cancer. Together with his former student Jesse Pinkman (Aaron Paul), White turns to a life of crime by producing and selling crystallized methamphetamine to secure his family's financial future before he dies, while navigating the dangers of the criminal underworld. The title comes from the Southern colloquialism "breaking bad" which means to turn to a life of immorality or crime.[8] Gilligan characterized the series as showing Walter's transformation from a soft-spoken Mr. Chips into Scarface.
+
+    Among the show's co-stars are Anna Gunn and RJ Mitte as Walter's wife Skyler and son Walter, Jr., and Betsy Brandt and Dean Norris as Skyler's sister Marie Schrader and her husband Hank, a DEA agent. Others include Bob Odenkirk as the sleazy lawyer Saul Goodman, Jonathan Banks as private investigator and fixer Mike Ehrmantraut, and Giancarlo Esposito as the drug kingpin Gus Fring. The final season introduces Jesse Plemons as the criminally-ambitious Todd Alquist, and Laura Fraser as Lydia Rodarte-Quayle, a business executive secretly managing Walter's global meth sales for her company.</p>
+  <p class="lead">
+    <button type="button" class="btn btn-secondary btn-lg btn-block" style="padding-top:5px;padding-bottom: 5px" (click)="goToAllCast()"> See the Whole Cast of Breaking Bad</button>
+  </p>
+  <div class="card" style="width:50%;height:200px;margin: auto">
+    <div class="card-body">
+      <h2 style="text-align: center">Search a Character by Name</h2>
+      <form>
+
+        <div class="form-group">
+          <label >Enter Name</label>
+          <input [(ngModel)]="name" class="form-control"  placeholder="Enter correct name.The api isn't that good!!" [ngModelOptions]="{standalone: true}">
+
+        </div>
+
+        <button type="submit" class="btn btn-primary" (click)="showNameCharacter()">Submit</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<footer class="page-footer font-small blue pt-4" style="background-color: #333333">
+
+<!-- Footer Links -->
+<div class="container-fluid text-center text-md-left">
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-md-6 mt-md-0 mt-3">
+
+      <!-- Content -->
+      <h5 class="text-uppercase" style="color: azure">Breaking Bad Community</h5>
+      <p style="color: azure">Follow us to be updated about all the buzz.</p>
+
+    </div>
+    <!-- Grid column -->
+
+    <hr class="clearfix w-100 d-md-none pb-3">
+
+    <!-- Grid column -->
+    <div class="col-md-3 mb-md-0 mb-3">
+
+      <!-- Links -->
+      <h5 class="text-uppercase" style="color: azure">Follow us</h5>
+
+      <ul class="list-unstyled">
+        <li>
+          <a href="#!" style="color: azure">Facebook</a>
+        </li>
+        <li>
+          <a href="#!"style="color: azure">Instagram</a>
+        </li>
+        <li>
+          <a href="#!" style="color: azure">Twitter</a>
+        </li>
+        <li>
+          <a href="#!"style="color: azure">Snapchat</a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-3 mb-md-0 mb-3">
+
+      <!-- Links -->
+      <h5 class="text-uppercase" style="color: azure"> Links</h5>
+
+      <ul class="list-unstyled">
+        <li>
+          <a href="#!"style="color: azure">Link 1</a>
+        </li>
+        <li>
+          <a href="#!" style="color: azure">Link 2</a>
+        </li>
+        <li>
+          <a href="#!" style="color: azure">Link 3</a>
+        </li>
+        <li>
+          <a href="#!" style="color: azure">Link 4</a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</div>
+<!-- Footer Links -->
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3" style="color: azure">© 2020 Copyright:
+  <a href="https://mdbootstrap.com/education/bootstrap/" style="color: azure"> breakingbad.com</a>
+</div>
+<!-- Copyright -->
+
+</footer>

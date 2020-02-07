@@ -1,0 +1,21 @@
+<div style="padding-top: 70px">
+  <mat-card class="example-card" *ngFor="let data of character" style="margin: auto;width:42%">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+
+
+      <h1 style="text-align: center;padding-left: 100px">{{data.name}}</h1>
+    </mat-card-header>
+    <img mat-card-image src="{{data.img}}" alt="Photo of a Shiba Inu" style="height: 500px;width:500px;margin: auto;padding-left: 25px">
+    <br/>
+    <br/>
+    <mat-card-content>
+      <h4 style="text-align: center">Birth Date:{{data.birthday}}</h4>
+      <h4 style="text-align: center">Status:{{data.status}}</h4>
+      <h4 style="text-align: center">Portrayed:{{data.portrayed}}</h4>
+      <h4 style="text-align: center">NickName:{{data.nickname}}</h4>
+
+    </mat-card-content>
+
+  </mat-card>
+</div>

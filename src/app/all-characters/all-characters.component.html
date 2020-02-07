@@ -1,0 +1,17 @@
+<!--<p>all-characters works!</p>-->
+<div class="jumbotron" style="padding-left: 400px">
+  <h1 class="display-4">List of all Characters of Breaking Bad</h1>
+
+</div>
+<div class="card text-center" *ngFor="let data of allcharac" style="width: 60%;margin: 0 auto">
+  <div class="card-header">
+  </div>
+  <div class="card-body">
+    <h3 class="card-title">{{data.name}}</h3>
+<!--    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+    <button type="button" class="btn btn-primary"  (click)="showSpecificCharac(data.char_id)">
+      Know More
+    </button>
+  </div>
+
+</div>
